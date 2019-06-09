@@ -1,0 +1,58 @@
+{
+  "mainItems":[
+    {
+      "product":[
+        {
+          "skus":[
+            {
+              "salePrice":69.99,
+              "numberOfBottles":15,
+              "caseTypeDesc":"Reds Mixed Case",
+              "id":"sku4070313"
+            }
+          ],
+          "id":"prod4070313",
+          "name":"Top 12 Reds Collection",
+          "listPrice":69.99
+        }
+      ],
+      "id":"added4070313"
+    },
+    {
+      "product":[
+        {
+          "skus":[
+            {
+              "salePrice":69.99,
+              "numberOfBottles":15,
+              "caseTypeDesc":"Whites Mixed Case",
+              "id":"sku4070314"
+            }
+          ],
+          "id":"prod4070314",
+          "name":"Top 12 Whites Collection",
+          "listPrice":69.99
+        }
+      ],
+      "id":"added4070314"
+    },
+    {
+      "product":[
+        {
+          "skus":[
+            {
+              "salePrice":69.99,
+              "numberOfBottles":15,
+              "caseTypeDesc":"Mixed Case",
+              "id":"sku4070312"
+            }
+          ],
+          "id":"prod4070312",
+          "name":"Top 12 Mixed Collection",
+          "listPrice":69.99
+        }
+      ],
+      "id":"added4070312"
+    }
+  ]
+}
