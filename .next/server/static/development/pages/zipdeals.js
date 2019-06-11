@@ -495,71 +495,65 @@ function (_React$Component) {
         className: "container dwi-div dwi-card",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 11
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h5", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 12
         },
         __self: this
-      }, "Challenge #2")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      }, "Challenge #2"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 13
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "card-deck",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 14
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "card col-4 cardmin margintopbottom",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 15
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "card-body",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 16
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h4", {
         className: "card-title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 17
         },
         __self: this
-      }, "  "), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h6", {
+      }, " "), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h6", {
         className: "card-title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 18
         },
         __self: this
       }, "test"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
         className: "card-text",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 19
         },
         __self: this
-      }, "test   "))))));
+      }, "test "))))));
     }
   }], [{
     key: "getInitialProps",
