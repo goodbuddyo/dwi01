@@ -1,20 +1,35 @@
 
-
 ## README FOR 20190610 - Sean ONeill
 ## dwi-coding-challenge
 ## Take-home weekend challenge for Direct Wines
+#############################################################################
 
 ## React app packages include Bootstrap, Next.js (with Webpack), Axios and Json-Server 
 
 ## git clone https://github.com/goodbuddyo/dwi01.git
-## cd to the folder and fire up json-server with:
-## $ npm run json-server
-
+## cd to the folder 
+## Note: the initial install may require installing some npm packages first
+##
+## fire up json-server with:
+##           $ npm run json-server
+##
 ## then open 2nd terminal and run:
-## $ npm run dev
+##            $ npm run dev
 ## navigate to localhost:3000
 
-## With a Monday due date, I'm submitting what I have ( Challenge 1 uses a REST call to a local Json-Server and a json file derived from the 0033008 link provided. Callenge 2 is incomplete).
+## if the initial run attempts fail try installing the following:
+##
+
+##           $ npm install json-server
+## then in a 2nd terminal and run:
+##           $ npm install react react-dom next  --save
+##
+## then try the 2 run commands above again
+
+#########################################################################
+
+## With a Monday due date, I'm submitting what I have completed so far
+## (Challenge 1 uses a REST call to a local Json-Server and a json file derived from the 0033008 link provided. Callenge 2 is incomplete).
 
 ## Let me know if you have any Q's
 ## Hope you like what you see.
