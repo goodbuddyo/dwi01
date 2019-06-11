@@ -12008,7 +12008,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fmymainitems&absolutePagePath=C%3A%5CUsers%5Cseano%5Crepos02%5Creact%5Cdwi_01%5Cpages%5Cmymainitems.js ***!
   \****************************************************************************************************************************************************/
@@ -12031,5 +12031,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=mymainitems.js.map

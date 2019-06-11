@@ -1,58 +1,707 @@
-  .large { padding: 50px; }
-  .cardwidth { width: 30rem; }
-  .dwi-div .margintopbottom { margin-top: 20px;  margin-bottom: 20px;   padding-right: 5px; padding-left: 8px; }
-  .margintopbottom10 {  margin-top: 10px;  margin-bottom: 10px;  }
-  .cardmin { min-width: 330px;}
-  .dwi-div .navbar-nav { -ms-flex-direction: row; flex-direction: row; }
-  .dwi-div .navbar-dark .navbar-nav a { color: rgba(255,255,255,.6); font-size: 0.7rem; font-weight: 500;}
-  .dwi-div .navbar-dark .navbar-nav a:hover { color: rgba(255,255,255,.9); }
-  .dwi-header-logo {float:left; padding: 10px 0;}
-  .dwi-header-slogan {float:right; text-align:right; padding: 16px 2px 10px 0px;} 
-  .dwi-header-slogan p {float:right; text-align:right; padding: 0px;  margin: 0px; font-weight: bold;  font-size: 0.6rem; line-height: .74rem;} 
-  .dwi-div .nav-link { padding: .1rem 0.2rem .1rem 0.6rem; }
-  .dwi-div .navbar { padding: .2rem .1rem; border-radius: 0.3rem; }
-  .dwi-footer p { font-size: 0.6rem;  line-height: 0.8rem;  padding: 4px 20px;}
-  .dwi-div .jumbotron {   background-image: url(/static/dwi/img/wsj_hero_seo_reds_69_185_desktop.jpg);  background-color: transparent;   background-repeat: no-repeat;  background-size: 100%; width: 100%; height: 220px; padding: 4px 15px; margin-bottom: 0.3rem;  }
-  .dwi-div .jumbotron h2 {color: #ffffff; width: 100%;  text-align:center;  font-size: 1.0rem; padding: 0 10px; }
-  .dwi-div .jumbotron h6 {color: #ffffff;  text-align:center; font-size: 0.7rem;padding:  4px 6px;  margin:  0 56px;  background-color: rgba(00,00,00,.3);  border-radius: 0.25rem; }
-  .dwi-div .margintopbottom { margin-top: 4px;  margin-bottom: 10px;  }
-  .dwi-div  .dwi-logo-image {max-height: 38px; padding: 2px 2px 2px 8px;}
-  .dwi-div .card-deck { display: flex; align-items: center; justify-content: center; text-align: center; }
-  .dwi-div .row { display: flex; align-items: center; justify-content: center; }
-  .dwi-div .card-deck .card { margin-right: 4px; margin-left: 4px;  }
-  .dwi-div .form-check-label ,
-  .dwi-div .form-check  {  font-size: 0.7rem;    text-align: left; padding-left: 0.6rem; }
-  .dwi-div .form-check-input {   margin-top: .16rem;  margin-left: -.75rem; }
-  .dwi-radio-items {padding: 0.1rem 0  0.4rem 0 ; }
-  .dwi-card .card p {font-size: 0.7rem; line-height: .9rem;  margin-top: 0.32rem; text-align:left; }
-  .dwi-form-section .section-header-1 h3 {
-  font-family: Impact, Charcoal, Arial, Helvetica, sans-serif;  font-size: 17px; text-align:left;  color: #d7182a; margin-bottom: 6px;  }
-  .dwi-card a.dwi-view -deal { color:#0274a9; padding: 0 10px; font-weight:bold;  }
-  .dwi-card a.dwi-view-deal:hover { color:#007bff; padding: 0 10px; font-weight:bold;  }
-  .section-header {  margin: 20px 0;  padding: 3px 0 3px 80px;  position: relative;  clear: both; border-bottom: 2px solid #d7182a;  }
-  .section-header{margin: 10px 0 4px 0; padding: 3px 0 3px 80px; position: relative; clear: both; border-bottom: 2px solid #d7182a}
-  .section-header:after{display: block; width: 65px; height: 26px; content: "Step " counter(section); counter-increment: section; padding: 0 3px; color: #fff; text-align: center; letter-spacing: .8px; position: absolute; top: 0; left: 0; background-color: #d7182a; font-family: Impact, Charcoal, Arial, Helvetica, sans-serif; font-size: 17px}
-  .section-header:before{display: block; content: ''; width: 0; height: 0; border-top: 13px solid transparent; border-left: 8px solid #d7182a; border-bottom: 13px solid transparent; position: absolute; top: 0; bottom: 0; left: 65px}
-  .section-header h2{color: #d7182a; font-family: Impact, Charcoal, Arial, Helvetica, sans-serif; font-weight: 600; font-size: 16px; color: #5f1818; position: relative}
-  .offer-layout-uplift .section-header{margin: 20px 0; padding: 3px 0 1px 70px; position: relative; clear: both; border-bottom: 1px solid #999}
-  .offer-layout-uplift .section-header:after{display: block; width: 65px; height: 25px; content: "STEP " counter(section) ": "; counter-increment: section; padding: 0; color: #999; text-align: center; letter-spacing: .8px; position: absolute; top: 0; left: 0; background-color: #fff; font-family: Impact, Charcoal, Arial, Helvetica, sans-serif; font-size: 18.5px; font-weight: 700}
-  .offer-layout-uplift .section-header:before{display: none}
-  .offer-layout-uplift .section-header h2{color: #000; font-family: Impact, Charcoal, Arial, Helvetica, sans-serif; font-size: 18.5px; font-weight: 400; position: relative}
-  .offer-layout-uplift.offer-layout-accordion .section-header:before{left: 66px; border-left-color: #bfbfbf; border-top-width: 21px; border-bottom-width: 21px; border-left-width: 9px; display: block}
-  .offer-layout-uplift.offer-layout-accordion .section-header:after{color: #fff; font-size: 16px; font-weight: 400}
-  #checkout-lp-unlimited .section-header:before{display: none}
-  #checkout-lp-unlimited .section-header:after{display: none; counter-increment: none}
-  .container{min-width:280px}
+.large {
+  padding: 50px;
+}
+
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.cardwidth {
+  width: 30rem;
+}
+
+.dwi-div .margintopbottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 5px;
+  padding-left: 8px;
+}
+
+.margintopbottom10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.large {
+  padding: 50px;
+}
+
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.cardwidth {
+  width: 30rem;
+}
+
+.dwi-div .margintopbottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 5px;
+  padding-left: 8px;
+}
+
+.margintopbottom10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cardmin {
+  min-width: 330px;
+}
+
+.dwi-div .navbar-nav {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.dwi-div .navbar-dark .navbar-nav a {
+  color: rgba(255,255,255,.6);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.dwi-div .navbar-dark .navbar-nav a:hover {
+  color: rgba(255,255,255,.9);
+}
+
+.dwi-header-logo {
+  float: left;
+  padding: 10px 0;
+}
+
+.dwi-header-slogan {
+  float: right;
+  text-align: right;
+  padding: 16px 2px 10px 0px;
+}
+
+.dwi-header-slogan p {
+  float: right;
+  text-align: right;
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+  font-size: 0.6rem;
+  line-height: .74rem;
+}
+
+.dwi-div .nav-link {
+  padding: .1rem 0.2rem .1rem 0.6rem;
+}
+
+.dwi-div .navbar {
+  padding: .2rem .1rem;
+  border-radius: 0.3rem;
+}
+
+.dwi-footer p {
+  font-size: 0.6rem;
+  line-height: 0.8rem;
+  padding: 4px 20px;
+}
+
+.dwi-div .jumbotron {
+  background-image: url(/static/dwi/img/wsj_hero_seo_reds_69_185_desktop.jpg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 220px;
+  padding: 4px 15px;
+  margin-bottom: 0.3rem;
+}
+
+.dwi-div .jumbotron h2 {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  font-size: 1.0rem;
+  padding: 0 10px;
+}
+
+.dwi-div .jumbotron h6 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 4px 6px;
+  margin: 0 56px;
+  background-color: rgba(00,00,00,.3);
+  border-radius: 0.25rem;
+}
+
+.dwi-div .margintopbottom {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.dwi-div  .dwi-logo-image {
+  max-height: 38px;
+  padding: 2px 2px 2px 8px;
+}
+
+.dwi-div .card-deck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.dwi-div .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dwi-div .card-deck .card {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.dwi-div .form-check-label ,
+  .dwi-div .form-check {
+  font-size: 0.7rem;
+  text-align: left;
+  padding-left: 0.6rem;
+}
+
+.dwi-div .form-check-input {
+  margin-top: .16rem;
+  margin-left: -.75rem;
+}
+
+.dwi-radio-items {
+  padding: 0.1rem 0  0.4rem 0;
+}
+
+.dwi-card .card p {
+  font-size: 0.7rem;
+  line-height: .9rem;
+  margin-top: 0.32rem;
+  text-align: left;
+}
+
+.dwi-card .card input {
+  font-size: 0.7rem;
+  line-height: .9rem;
+  text-align: left;
+  width: 80%;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.dwi-zip-button.btn-sm {
+  padding: .1rem .5rem;
+  font-size: .7rem;
+}
+
+.dwi-zip-code {
+  display: block;
+  text-align: left;
+}
+
+.dwi-zip-input {
+  text-align: left;
+}
+
+.dwi-zip-input label {
+  display: block;
+  margin-bottom: 0.1rem;
+  text-align: left;
+}
+
+.dwi-div .dwi-zip-btn {
+  text-align: right;
+  float: right;
+}
+
+.dwi-btn-label {
+  text-align: right;
+  float: right;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.dwi-form-section .section-header-1 h3 {
+  font-family: Impact, Charcoal, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  text-align: left;
+  color: #d7182a;
+  margin-bottom: 6px;
+}
+
+.dwi-card a.dwi-view-deal {
+  color: #0274a9;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.dwi-card a.dwi-view-deal:hover {
+  color: #007bff;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.section-header {
+  margin: 20px 0;
+  padding: 3px 0 3px 80px;
+  position: relative;
+  clear: both;
+  border-bottom: 2px solid #d7182a;
+}
+
+.section-header {
+  margin: 10px 0 4px 0;
+  padding: 3px 0 3px 80px;
+  position: relative;
+  clear: both;
+  border-bottom: 2px solid #d7182a;
+}
+
+.section-header:after {
+  display: block;
+  width: 65px;
+  height: 26px;
+  content: "Step " counter(section);
+  counter-increment: section;
+  padding: 0 3px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #d7182a;
+  font-family: Impact, Charcoal, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.section-header:before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-left: 8px solid #d7182a;
+  border-bottom: 13px solid transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 65px;
+}
+
+.section-header h2 {
+  color: #d7182a;
+  font-family: Impact, Charcoal, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #5f1818;
+  position: relative;
+}
+
+.offer-layout-uplift .section-header {
+  margin: 20px 0;
+  padding: 3px 0 1px 70px;
+  position: relative;
+  clear: both;
+  border-bottom: 1px solid #999;
+}
+
+.offer-layout-uplift .section-header:after {
+  display: block;
+  width: 65px;
+  height: 25px;
+  content: "STEP " counter(section) ": ";
+  counter-increment: section;
+  padding: 0;
+  color: #999;
+  text-align: center;
+  letter-spacing: .8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  font-family: Impact, Charcoal, Arial, Helvetica, sans-serif;
+  font-size: 18.5px;
+  font-weight: 700;
+}
+
+.offer-layout-uplift .section-header:before {
+  display: none;
+}
+
+.offer-layout-uplift .section-header h2 {
+  color: #000;
+  font-family: Impact, Charcoal, Arial, Helvetica, sans-serif;
+  font-size: 18.5px;
+  font-weight: 400;
+  position: relative;
+}
+
+.offer-layout-uplift.offer-layout-accordion .section-header:before {
+  left: 66px;
+  border-left-color: #bfbfbf;
+  border-top-width: 21px;
+  border-bottom-width: 21px;
+  border-left-width: 9px;
+  display: block;
+}
+
+.offer-layout-uplift.offer-layout-accordion .section-header:after {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#checkout-lp-unlimited .section-header:before {
+  display: none;
+}
+
+#checkout-lp-unlimited .section-header:after {
+  display: none;
+  counter-increment: none;
+}
+
+.container {
+  min-width: 280px;
+}
+
+.cardmin {
+  min-width: 330px;
+}
+
+.dwi-div .navbar-nav {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.dwi-div .navbar-dark .navbar-nav a {
+  color: rgba(255,255,255,.6);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.dwi-div .navbar-dark .navbar-nav a:hover {
+  color: rgba(255,255,255,.9);
+}
+
+.dwi-header-logo {
+  float: left;
+  padding: 10px 0;
+}
+
+.dwi-header-slogan {
+  float: right;
+  text-align: right;
+  padding: 16px 2px 10px 0px;
+}
+
+.dwi-header-slogan p {
+  float: right;
+  text-align: right;
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+  font-size: 0.6rem;
+  line-height: .74rem;
+}
+
+.dwi-div .nav-link {
+  padding: .1rem 0.2rem .1rem 0.6rem;
+}
+
+.dwi-div .navbar {
+  padding: .2rem .1rem;
+  border-radius: 0.3rem;
+}
+
+.dwi-footer p {
+  font-size: 0.6rem;
+  line-height: 0.8rem;
+  padding: 4px 20px;
+}
+
+.dwi-div .jumbotron {
+  background-image: url(/static/dwi/img/wsj_hero_seo_reds_69_185_desktop.jpg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 220px;
+  padding: 4px 15px;
+  margin-bottom: 0.3rem;
+}
+
+.dwi-div .jumbotron h2 {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  font-size: 1.0rem;
+  padding: 0 10px;
+}
+
+.dwi-div .jumbotron h6 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 4px 6px;
+  margin: 0 56px;
+  background-color: rgba(00,00,00,.3);
+  border-radius: 0.25rem;
+}
+
+.dwi-div .margintopbottom {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.dwi-div  .dwi-logo-image {
+  max-height: 38px;
+  padding: 2px 2px 2px 8px;
+}
+
+.dwi-div .card-deck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.dwi-div .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dwi-div .card-deck .card {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.dwi-div .form-check-label ,
+  .dwi-div .form-check {
+  font-size: 0.7rem;
+  text-align: left;
+  padding-left: 0.6rem;
+}
+
+.dwi-div .form-check-input {
+  margin-top: .16rem;
+  margin-left: -.75rem;
+}
+
+.dwi-radio-items {
+  padding: 0.1rem 0  0.4rem 0;
+}
+
+.dwi-card .card p {
+  font-size: 0.7rem;
+  line-height: .9rem;
+  margin-top: 0.32rem;
+  text-align: left;
+}
+
+.dwi-card .card input {
+  font-size: 0.7rem;
+  line-height: .9rem;
+  text-align: left;
+  width: 80%;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.dwi-zip-button.btn-sm {
+  padding: .1rem .5rem;
+  font-size: .7rem;
+}
+
+.dwi-zip-code {
+  display: block;
+  text-align: left;
+}
+
+.dwi-zip-input {
+  text-align: left;
+}
+
+.dwi-zip-input label {
+  display: block;
+  margin-bottom: 0.1rem;
+  text-align: left;
+}
+
+.dwi-div .dwi-zip-btn {
+  text-align: right;
+  float: right;
+}
+
+.dwi-btn-label {
+  text-align: right;
+  float: right;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.dwi-form-section .section-header-1 h3 {
+  font-family: Impact, Charcoal, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  text-align: left;
+  color: #d7182a;
+  margin-bottom: 6px;
+}
+
+.dwi-card a.dwi-view-deal {
+  color: #0274a9;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.dwi-card a.dwi-view-deal:hover {
+  color: #007bff;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.section-header {
+  margin: 20px 0;
+  padding: 3px 0 3px 80px;
+  position: relative;
+  clear: both;
+  border-bottom: 2px solid #d7182a;
+}
+
+.section-header {
+  margin: 10px 0 4px 0;
+  padding: 3px 0 3px 80px;
+  position: relative;
+  clear: both;
+  border-bottom: 2px solid #d7182a;
+}
+
+.section-header:after {
+  display: block;
+  width: 65px;
+  height: 26px;
+  content: "Step " counter(section);
+  counter-increment: section;
+  padding: 0 3px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #d7182a;
+  font-family: Impact, Charcoal, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.section-header:before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-left: 8px solid #d7182a;
+  border-bottom: 13px solid transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 65px;
+}
+
+.section-header h2 {
+  color: #d7182a;
+  font-family: Impact, Charcoal, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #5f1818;
+  position: relative;
+}
+
+.offer-layout-uplift .section-header {
+  margin: 20px 0;
+  padding: 3px 0 1px 70px;
+  position: relative;
+  clear: both;
+  border-bottom: 1px solid #999;
+}
+
+.offer-layout-uplift .section-header:after {
+  display: block;
+  width: 65px;
+  height: 25px;
+  content: "STEP " counter(section) ": ";
+  counter-increment: section;
+  padding: 0;
+  color: #999;
+  text-align: center;
+  letter-spacing: .8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  font-family: Impact, Charcoal, Arial, Helvetica, sans-serif;
+  font-size: 18.5px;
+  font-weight: 700;
+}
+
+.offer-layout-uplift .section-header:before {
+  display: none;
+}
+
+.offer-layout-uplift .section-header h2 {
+  color: #000;
+  font-family: Impact, Charcoal, Arial, Helvetica, sans-serif;
+  font-size: 18.5px;
+  font-weight: 400;
+  position: relative;
+}
+
+.offer-layout-uplift.offer-layout-accordion .section-header:before {
+  left: 66px;
+  border-left-color: #bfbfbf;
+  border-top-width: 21px;
+  border-bottom-width: 21px;
+  border-left-width: 9px;
+  display: block;
+}
+
+.offer-layout-uplift.offer-layout-accordion .section-header:after {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#checkout-lp-unlimited .section-header:before {
+  display: none;
+}
+
+#checkout-lp-unlimited .section-header:after {
+  display: none;
+  counter-increment: none;
+}
+
+.container {
+  min-width: 280px;
+}
 
   @media (min-width: 576px) {
 
-  .navbar-expand-sm .navbar-nav .nav-link { padding-right: .5rem; padding-left: .5rem; }
-  .dwi-div .jumbotron h2 {font-size: 1.4rem; }
-  .dwi-div .jumbotron { background-size: 506px; width: 506px;  height: 380px; }
-  .dwi-header-slogan p { font-size: 0.82rem; line-height: 1.0rem;} 
-  .dwi-header-slogan { padding: 10px 20px 10px 10px; }
-  .dwi-div .jumbotron h6 {  font-size: 0.9rem; }
-  .dwi-div .navbar-dark .navbar-nav a {  font-size: 0.86rem;  font-weight: 500; }
+    .navbar-expand-sm .navbar-nav .nav-link { padding-right: .5rem; padding-left: .5rem; }
+    .dwi-div .jumbotron h2 {font-size: 1.4rem; }
+    .dwi-div .jumbotron { background-size: 506px; width: 506px;  height: 380px; }
+    .dwi-header-slogan p { font-size: 0.82rem; line-height: 1.0rem;} 
+    .dwi-header-slogan { padding: 10px 20px 10px 10px; }
+    .dwi-div .jumbotron h6 {  font-size: 0.9rem; }
+    .dwi-div .navbar-dark .navbar-nav a {  font-size: 0.86rem;  font-weight: 500; }
+
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
 
   }
 
