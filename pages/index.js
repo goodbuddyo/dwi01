@@ -1,58 +1,34 @@
-import React from "react";
-import axios from 'axios';
+import React, { Component } from "react";
 
-class Index extends React.Component {
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../css/site.css";
 
-  static async getInitialProps () {
-    var promise = axios.get('http://localhost:4000/speakers').
-    then(response => {
-      return {
-        hasErrored: false,
-        speakerData: response.data
-      };
-    })
-    .catch(error => {
-      return {
-        hasErrored: true,
-        message: error.message
-      }
-    });
-    return promise;
+class Index extends Component {
+  static async getInitialProps() {
+    return {};
   }
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      hasErrored: props.hasErrored,
-      message: props.message,
-      speakerData: props.speakerData
-    }
-  }
-
-
-  componentDidMount() {
-
-  }
-
-   componentWillUnmount() {
-
-  }
-
 
   render() {
     return (
-      <ul>
-        {this.state.speakerData.map((speaker) =>
-        <li key={speaker.id}>
-          {speaker.firstName} {speaker.lastName} {speaker.company}
-        </li>
-        )}
-      </ul>
-    )
+      <div>
+        <div className="container  dwi-div">
+          <div className="jumbotron">
+            <div className="row">
+              <div className="col margintopbottom">
+                <h2>Enjoy the Best Red Wine in Our Cellars</h2>
+                <h6 className="margintopbottom20">
+                  SAVE $185 on the most customized wine club around
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
 
+Index.propTypes = {};
+Index.defaultProps = {};
+
 export default Index;
-
-
-

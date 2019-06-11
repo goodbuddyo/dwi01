@@ -1,5 +1,6 @@
 {
   "speakers": [
+
     {
       "id": 1530,
       "firstName": "Tammy",
@@ -78,6 +79,9 @@
               "isKeyNoteSpeaker": false,
               "isWorkshopSpeaker": false
             },
+
+
+
             {
               "id": 18805,
               "firstName": "Mickey W.",
@@ -129,6 +133,22 @@
           "sessionSlug": "ask-the-expert-qa-with-engineering-managers"
         }
       ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       "allowHtml": true,
       "facebookUrl": "",
       "googlePlusUrl": "",
@@ -413,7 +433,7 @@
               "isKeyNoteSpeaker": false,
               "isWorkshopSpeaker": false
             },
-           
+
             {
               "id": 8590,
               "firstName": "Chris",
@@ -1391,6 +1411,42 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "sessions": [
     {
       "codeCampYearId": 13,
@@ -2000,7 +2056,7 @@
     },
 
 
- 
+
 
 
 
@@ -2198,10 +2254,10 @@
     },
 
 
-    
 
 
-    
+
+
     {
       "codeCampYearId": 13,
       "sessionLevel_id": 2,
@@ -2885,5 +2941,51 @@
       "roomCapacity": 75,
       "id": 7401
     }
+  ],
+
+
+  "zipdeals": [
+    {
+      "salePrice":69.99,
+      "numberOfBottles":15,
+      "caseTypeDesc":"Zip Reds Mixed Case",
+      "id":"zip4070313",
+      "name":"Zip  Top 12 Reds Collection",
+      "zipcode":"00001",
+      "listPrice":69.99
+    }
+  ],
+
+
+  "mymainitems": [
+    {
+      "salePrice":69.99,
+      "numberOfBottles":15,
+      "caseTypeDesc":"Reds Mixed Case",
+      "id":"prod4070313",
+      "name":"Top 12 Reds Collection",
+      "listPrice":69.99
+    },
+    {
+      "salePrice":69.99,
+      "numberOfBottles":15,
+      "caseTypeDesc":"Whites Mixed Case",
+      "id":"prod4070314",
+      "name":"Top 12 Whites Collection",
+      "listPrice":69.99
+    },
+    {
+      "salePrice":69.99,
+      "numberOfBottles":15,
+      "caseTypeDesc":"Mixed Case",
+      "id":"prod4070312",
+      "name":"Top 12 Mixed Collection",
+      "listPrice":69.99
+    }
   ]
+
+
+
+
+
 }
