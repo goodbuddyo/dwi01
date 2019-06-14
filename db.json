@@ -444,5 +444,19 @@
       "name": "Top 12 Mixed Collection",
       "listPrice": 69.99
     }
-  ]
+  ],
+  
+  "zipcodeinput": [
+    {
+      "zipCode":"12345",
+      "stateName":"New York",
+      "stateCode":"NY",
+      "stateAbbrevation":"NY",
+      "city":"Schenectady",
+      "country":"US",
+      "county":"SCHENECTAD"
+    }
+    ]
+
+
 }

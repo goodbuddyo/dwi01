@@ -23,7 +23,7 @@ export class Menu extends Component {
               </li>
 
               <li className="nav-item">
-                <Link href="/zipdeals">
+                <Link href="/zipcodeinput">
                   <a className="nav-link">Challenge 2</a>
                 </Link>
               </li>

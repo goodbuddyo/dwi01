@@ -1,86 +1,88 @@
-import React from "react";
+import React, {useState} from "react";
 import axios from "axios";
+import Link from "next/link";
+
+
+
+const InputElement = () => {
+
+  const [inputText,setInputText] = useState("");
+  const [historyList, setHistoryList] = useState([]);
+
+  return <div><input className="form-check-input dwi-zip-input"
+      onChange={(e) => {
+          setInputText(e.target.value);
+          setHistoryList([...historyList,e.target.value]);
+      }}
+      placeholder="Enter Zip Code"/>
+      <p className="dwi-zip-result">{inputText}</p>
+      {/* <hr/><br/>
+      <ul>{historyList.map((rec)=> { return <div>{rec}</div> })}
+      </ul> */}
+  </div>
+};
 
 class Zipcodeinput extends React.Component {
-  state = {
-    name: ""
-  };
+  static async getInitialProps() {
+    var promise = axios
+      .get("http://localhost:4000/zipcodeinput")
+      .then(response => {
+        return {
+          hasErrored: false,
+          zipcodeinputData: response.data
+        };
+      })
+      .catch(error => {
+        return {
+          hasErrored: true,
+          message: error.message
+        };
+      });
+    return promise;
+  }
 
-  handleChange = event => {
-    this.setState({ name: event.target.value });
-  };
-
-  handleSubmit = event => {
-    event.preventDefault();
-
-    const user = {
-      name: this.state.name
+  constructor(props) {
+    super(props);
+    this.state = {
+      hasErrored: props.hasErrored,
+      message: props.message,
+      zipcodeinputData: props.zipcodeinputData
     };
+  }
 
-    axios.get("https://www.wsjwine.com/api/address/zipcode/12345").then(res => {
-      console.log(res);
-      console.log(res.data);
-    });
-  };
+  componentDidMount() {}
+  componentWillUnmount() {}
 
   render() {
     return (
-    <form onSubmit={this.handleSubmit}>
+    <div className="container dwi-div dwi-card">
+      <div>
+        <h5>Challenge #2</h5>
+      </div>
       <div className="row">
+        <div className="card-deck">
 
-        <div className=" col-12 col-sm-8  dwi-zip-input">
-          <label>
-              Zip Code:
-            <input
-              type="text"
-              name="zipcode"
-              className="dwi-zip-code"
-              onChange={this.handleChange}
-            />
-          </label>
-
-          <label>
-          City:
-         <input
-          type="text"
-          name="city"
-          className="dwi-zip-code"
-          />
-         </label>
-
-          <label>
-            State:
-          <input
-            type="text"
-            name="state"
-            className="dwi-zip-code "
-          />
-        </label>
-        </div> 
-
-        <div className=" col-12 col-sm-4   dwi-zip-input  dwi-zip-btn">
-        <label  className="dwi-btn-label">
-          <button type="submit" className="dwi-zip-button btn btn-primary btn-sm">   Add </button>
-        </label>
-        </div> 
-        
-      </div> 
-    </form>
+        <div className="card col-12 cardmin margintopbottom dwi-form-section">
+          <form>
+          <div className="form-group row">
+            <div className="col-sm-6">
+              <InputElement />
+            </div>
+            <div className="col-sm-6">
+            {this.state.zipcodeinputData.map((zipcodeinput) =>
+              <p className="dwi-zip-result form-check"  key={zipcodeinput.zipCode}>
+                {zipcodeinput.city}, {zipcodeinput.stateAbbrevation} 
+              </p>
+            )}
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+      </div>
+      </div>
     );
   }
 }
-
-// {
-//   "response":{
-//   "zipCode":"12345",
-//   "stateName":"New York",
-//   "stateCode":"NY",
-//   "stateAbbrevation":"NY",
-//   "city":"Schenectady",
-//   "country":"US",
-//   "county":"SCHENECTAD"},
-//   "statusMessage":"successful",
-//   "statusCode":0
-// }
 
 export default Zipcodeinput;

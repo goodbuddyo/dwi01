@@ -1660,7 +1660,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        href: "/zipdeals",
+        href: "/zipcodeinput",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 26

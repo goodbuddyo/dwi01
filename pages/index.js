@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// axios and most code here moved to mymain
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/site.css";
@@ -11,6 +12,9 @@ class Index extends Component {
   render() {
     return (
       <div>
+
+
+
         <div className="container  dwi-div">
           <div className="jumbotron">
             <div className="row">

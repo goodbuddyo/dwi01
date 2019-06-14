@@ -11910,7 +11910,7 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "card col-6 cardmin margintopbottom dwi-form-section",
+        className: "card col-10 cardmin margintopbottom dwi-form-section",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 46
@@ -11976,24 +11976,30 @@ function (_React$Component) {
             lineNumber: 61
           },
           __self: this
-        }, mymainitems.name, " "), "  +  BONUS Bottles & Glasses ", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("strong", {
+        }, mymainitems.name, " "), "  +  BONUS Bottles & Glasses", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 61
+            lineNumber: 62
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("strong", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 62
           },
           __self: this
         }, " JUST   $", mymainitems.salePrice, " "), "  ", mymainitems.numberOfBottles, " Bottles", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
           href: "/zipdeals",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 62
+            lineNumber: 63
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
           className: " dwi-view-deal",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 63
+            lineNumber: 64
           },
           __self: this
         }, "view wines"))));
