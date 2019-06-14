@@ -6,8 +6,8 @@
 
 ## React app packages include Bootstrap, Next.js (with Webpack), Axios and Json-Server 
 
-## git clone https://github.com/goodbuddyo/dwi01.git
-## cd into the dwi_01 folder 
+## download or git clone https://github.com/goodbuddyo/dwi01.git
+## cd into the folder 
 
 ##  npm install the latest versions of these packages  
 ##           $ npm install json-server
@@ -24,8 +24,8 @@
 
 #########################################################################
 
-## Had cors issue with  REST calls 
-## api calls refrence a json file on the local Json-Server 
+## There were some cors issues with the wsjwine.com api calls 
+## to make progress, this test app calls on a local dev Json-Server 
 ## let me know if there are any issues or questions
 
 ## Regards
